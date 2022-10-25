@@ -132,6 +132,9 @@ const sign_in_exp = {
       enable_create_account: 'Enable create account',
       enable_create_account_description:
         'Enable or disable create account (sign-up). Once disabled, your customers can’t create accounts through the sign-in UI, but you can still add users in Admin Console.',
+      enable_forgot_password: 'Enable forgot password', // UNTRANSLATED
+      enable_forgot_password_description:
+        'This is the way for users to reset the password when their email or phone number get verified.', // UNTRANSLATED
     },
   },
   setup_warning: {

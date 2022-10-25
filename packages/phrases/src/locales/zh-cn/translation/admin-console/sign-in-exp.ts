@@ -126,6 +126,9 @@ const sign_in_exp = {
       enable_create_account: '启用创建帐号',
       enable_create_account_description:
         '启用或禁用创建帐号（注册）。一旦禁用，你的用户将无法通过登录 UI 来创建帐户，但你仍可以通过「管理面板」添加用户。',
+      enable_forgot_password: 'Enable forgot password', // UNTRANSLATED
+      enable_forgot_password_description:
+        'This is the way for users to reset the password when their email or phone number get verified.', // UNTRANSLATED
     },
   },
   setup_warning: {

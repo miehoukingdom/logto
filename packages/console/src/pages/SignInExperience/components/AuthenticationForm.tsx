@@ -20,6 +20,12 @@ const AuthenticationForm = () => {
           label={t('sign_in_exp.others.authentication.enable_create_account_description')}
         />
       </FormField>
+      <FormField title="sign_in_exp.others.authentication.enable_forgot_password">
+        <Switch
+          {...register('forgotPassword')}
+          label={t('sign_in_exp.others.authentication.enable_forgot_password_description')}
+        />
+      </FormField>
     </>
   );
 };

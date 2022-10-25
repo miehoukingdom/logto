@@ -131,6 +131,9 @@ const sign_in_exp = {
       enable_create_account: 'Permitir criar conta?',
       enable_create_account_description:
         'Ativa ou desativa a criação de contas. Depois de desativado, os seus clientes não poderão criar contas por meio da pagina de login, mas você poderá adicionar utiizadores na Consola de Administrador.',
+      enable_forgot_password: 'Enable forgot password', // UNTRANSLATED
+      enable_forgot_password_description:
+        'This is the way for users to reset the password when their email or phone number get verified.', // UNTRANSLATED
     },
   },
   setup_warning: {
