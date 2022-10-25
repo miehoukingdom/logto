@@ -21,6 +21,13 @@ export default function authnRoutes<T extends AnonymousRouter>(router: T) {
     }),
     async (ctx, next) => {
       const expectedRole = ctx.headers['expected-role']?.toString();
+      if (!expectedRole) {
+        ctx.body = {
+          'X-Hasura-Role': 'anonymous',
+        };
+        ctx.status = 200;
+        return next();
+      }
       const { sub, roleNames } = await verifyBearerTokenFromRequest(
         ctx.request,
         ctx.guard.query.resource
