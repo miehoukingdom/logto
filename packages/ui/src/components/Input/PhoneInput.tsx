@@ -92,15 +92,6 @@ const PhoneInput = ({
             onChange({ nationalNumber: value.replaceAll(/\D/g, '') });
           }}
         />
-        {nationalNumber && onFocus && (
-          <ClearIcon
-            className={styles.actionButton}
-            onMouseDown={(event) => {
-              event.preventDefault();
-              onChange({ nationalNumber: '' });
-            }}
-          />
-        )}
       </div>
       {error && <ErrorMessage error={error} className={styles.errorMessage} />}
     </div>
